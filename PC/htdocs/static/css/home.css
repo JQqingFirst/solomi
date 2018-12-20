@@ -1,0 +1,287 @@
+
+body, header, main, footer {
+    float: left;
+    width: 100%;
+}
+body {
+    font-size: 14px;
+    line-height: 1;
+    font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: 400;
+    color: #2f2e2e;
+    /*background: #a9a8a9;*/
+    /*background-color: #383736;*/
+    -webkit-font-smoothing: antialiased;
+    /*overflow-x: hidden;*/
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+header {
+    position: fixed;
+    z-index: 51;
+    padding: 18.5px 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 44px;
+    -webkit-transition: ease-out all 0.35s;
+    -moz-transition: ease-out all 0.35s;
+    -ms-transition: ease-out all 0.35s;
+    -o-transition: ease-out all 0.35s;
+    transition: ease-out all 0.35s;
+}
+.header-bg {
+    background-color: rgba(255, 255, 255, 0.98) !important;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1) !important;
+    height: 44px;
+}
+header .container {
+    padding: 0;
+    width: 95%;
+}
+
+header .main-menu:before, header .main-menu nav {
+    position: relative;
+    z-index: 51;
+}
+
+header .navbar-default {
+    background: #fff;
+    border: none;
+    margin: 0;
+}
+.navbar-brand{
+    padding: 0 15px;
+}
+header .logo {
+    width: 80px;
+    height: 44px;
+}
+header .logo img{
+    width: 100%;
+}
+header .navbar-nav {
+    position: relative;
+    text-transform: uppercase;
+    transition: ease all 0.5s;
+}
+header .navbar-nav li{
+    text-align: center;
+}
+#cover{
+    background: url(../images/header-bg.jpg) center top no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.container {
+    max-width: 1000px;
+}
+.text-center {
+    text-align: center;
+}
+.card{
+    width: 100px;
+    height: 100px;
+    margin: 150px auto 100px;
+    background-color: #fff;
+    padding: 70px 60px;
+
+}
+.card p {
+    font-family: "Arial black", "宋体", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 90px;
+    line-height: 1;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.card a {
+    color: #2f2e2e;
+}
+.card i{
+    font-size: 80px;
+    line-height: 0.5;
+    transition: All .7s ease-in-out;
+    -webkit-transition: All .7s ease-in-out;
+    -moz-transition: All .7s ease-in-out;
+    -o-transition: All .7s ease-in-out;
+}
+.card i:hover{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+}
+
+#service {
+    padding: 120px 0 100px 0;
+}
+.title h4 {
+    font-family: "Microsoft YaHei", "宋体", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-indent: 6px;
+    color: #2f2e2e;
+}
+.title div {
+    height: 3px;
+    width: 40px;
+    background-color: #f7931d;
+    margin: 20px auto 35px auto;
+}
+.scrollimation{
+    animation-iteration-count:1;
+    -webkit-animation-name: scaleDraw; /*关键帧名称*/
+    -webkit-animation-timing-function: ease-in-out; /*动画的速度曲线*/
+    -webkit-animation-iteration-count: 1;  /*动画播放的次数*/
+    -webkit-animation-duration: .7s; /*动画所花费的时间*/
+}
+@keyframes scaleDraw {
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.d1 {
+    animation-delay:.3s;
+}
+.d2 {
+    animation-delay: .6s;
+}
+.d3 {
+    animation-delay: .9s;
+}
+
+.service-item {
+    margin-top: 40px;
+    padding: 35px;
+    text-align: center;
+}
+.service-icon {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    margin: 20px auto;
+    font-size: 56px;
+    line-height: 1.3;
+    color: #2F2E2E;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.service-item h4 {
+    margin-top: -50px;
+    margin-bottom: 40px;
+}
+.service-item p {
+    margin: auto;
+    max-width: 160px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.masonry{
+    margin-bottom: 15px;
+}
+.masonry-box{
+    padding: 0 5px;
+}
+
+ /*.masonry-box .project-image:hover {*/
+     /*transform: width height;*/
+     /*-ms-transform:width height; 	!* IE 9 *!*/
+     /*-moz-transform:width height; 	!* Firefox *!*/
+     /*-webkit-transform:width height; !* Safari 和 Chrome *!*/
+     /*-o-transform:width height;*/
+     /*-webkit-transition-duration: 0.5s;*/
+    /*-moz-transition-duration: 0.5s;*/
+    /*-ms-transition-duration: 0.5s;*/
+    /*-o-transition-duration: 0.5s;*/
+    /*transition-duration: 0.5s;*/
+    /*transition-timing-function: ease-in-out;*/
+/*}*/
+/*.hoverbox{*/
+    /*display: none;*/
+/*}*/
+.hover-mask {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .6;
+    /*filter: alpha(opacity=0);*/
+    /*-moz-transition:all 2s ease-out;*/
+    /*-webkit-transition: all 2s ease-out;*/
+    /*-o-transition: all 2s ease-out;*/
+    /*transition: all 2s ease-out;*/
+}
+.hover-mask .project-title {
+    color: #fff;
+    margin: 0;
+    padding: 16px;
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: 300;
+}
+ .hover-mask p {
+    color: #fff;
+    margin: 0;
+    padding: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+ #about{
+     padding: 120px 0 145px 0;
+ }
+
+#contact {
+    background: url(../images/header-bg.jpg) center top no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#contact .dark-bg {
+    padding: 90px 0 90px 0;
+    background-color: rgba(47,46,46,0.7);
+    color: #fff;
+}
+#contact .clients img {
+    width: 130px;
+}
+#contact .contact-btn img {
+    margin: 50px 0 20px 0;
+    width: 180px;
+    height: 180px;
+}
+footer {
+    background-color: #2f2e2e;
+    color: #999;
+    padding: 30px 0;
+    line-height: 1.6;
+}
+

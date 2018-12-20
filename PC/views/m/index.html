@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="../../htdocs/static/css/reset.css" />
+    <link rel="stylesheet" href="../../htdocs/static/css/common.css" />
+    <title>梭罗蜜首页</title>
+    <style>
+        .wrap {
+            width: 100%;
+        }
+
+        .wrap img {
+            width: 100%;
+        }
+
+        .rechargebtn {
+            z-index: 10;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 3.75rem;
+            line-height: 3.75rem;
+            font-size: 1.32rem;
+            text-align: center;
+            background-color: #ffde09;
+            color: #ed584a;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <img src="../../htdocs/static/images/bg/index.jpg"/>
+    <div id="ylimg" class="download">
+
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../../htdocs/static/lib/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        var isAniOS;
+        var ua = navigator.userAgent.toLowerCase();
+        var isChrome = window.navigator.userAgent.indexOf("Chrome") !== -1;
+        if (/iphone|ipad|ipod/.test(ua)) {
+            isAniOS = 1;
+        } else if (/android/.test(ua)) {
+            isAniOS = 2;
+        }
+
+        $('#ylimg').click(function () {
+//                             alert(isAniOS);
+            if (isAniOS == 2) {
+
+                //安卓手机
+                window.location.href = 'intent:#Intent;component=com.lac.ly/.ui.biglotto.BitLottoActivity;end';
+            } else if (isAniOS == 1) {
+                //苹果手机
+                window.location.href = 'ly://bigLotterySelectNum';
+            } else {
+                //winphone手机
+                window.location.href = 'intent:#Intent;component=com.lac.ly/.ui.biglotto.BitLottoActivity;end';
+            }
+        })
+    }
+</script>
+</html>

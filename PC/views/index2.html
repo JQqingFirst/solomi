@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge"/>-->
+    <!--<meta name="renderer" content="webkit"/>-->
+    <meta name="keywords" content="梭罗蜜">
+    <meta name="description" content="梭罗蜜">
+    <link rel="icon" type="image/png" href="../htdocs/static/images/icon/favicon.png" sizes="32x32">
+    <title>梭罗蜜</title>
+
+    <link href="../htdocs/static/lib/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../htdocs/static/lib/jquery.fullPage.css">
+    <style>
+        .section {
+            text-align: center;
+            font: 50px "Microsoft Yahei";
+            color: #fff;
+        }
+
+        .section .bg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .se1_bg {
+            background: url(../htdocs/static/images/bg/tpic1.jpg) no-repeat 50% 50%;
+            background-size: cover;
+            -webkit-background-size: cover;
+        }
+
+        .se2_bg {
+            background: url(../htdocs/static/images/bg/tpic2.jpg) no-repeat 50% 50%;
+            background-size: cover;
+            -webkit-background-size: cover;
+        }
+
+        .se3_bg {
+            background: url(../htdocs/static/images/bg/tpic3.jpg) no-repeat 50% 50%;
+            background-size: cover;
+            -webkit-background-size: cover;
+        }
+
+        .se4_bg {
+            background: url(../htdocs/static/images/bg/tpic4.jpg) no-repeat 50% 50%;
+            background-size: cover;
+            -webkit-background-size: cover;
+        }
+
+        .slm-logo {
+            display: block;
+            position: absolute;
+            width: 115px;
+            left: 0;
+            margin-left: 100px;
+            top: 0;
+            /*margin-top: 20px;*/
+            height: 40px;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-image: url(../htdocs/static/images/logo2.png);
+        }
+
+        .bot {
+            width: 32px;
+            height: 44px;
+            position: absolute;
+            z-index: 1000;
+            bottom: 6%;
+            left: 50%;
+            margin-left: -16px;
+            transition: all 1s;
+            -webkit-transition: all 1s;
+            -moz-transition: all 1s;
+            -o-transition: all 1s;
+        }
+
+        .active .bot {
+            bottom: 2%;
+            opacity: 1;
+            transition-delay: 0.9s;
+            -webkit-transition-delay: 0.9s;
+            -moz-transition-delay: 0.9s;
+            -o-transition-delay: 0.9s;
+        }
+    </style>
+    <script src="../htdocs/static/lib/jquery.min.js"></script>
+    <script src="../htdocs/static/lib/bootstrap.min.js"></script>
+    <script src="../htdocs/static/lib/jquery-ui.min.js"></script>
+    <script src="../htdocs/static/lib/jquery.fullPage.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if (window.location.toString().indexOf('pref=padindex') != -1) {
+            } else {
+                if (/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))) {
+                    if (window.location.href.indexOf("?mobile") < 0) {
+                        try {
+                            if (/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                                window.location.href = "m/index.html";
+                            }
+                        } catch (e) {
+                        }
+                    } else {
+                    }
+                }
+            }
+            $.fn.fullpage({
+                // slidesColor: ['', '#4BBFC3', '#7BAABE', '#f90'],
+                anchors: ['page1', 'page2', 'page3', 'page4'],
+                // scrollingSpeed: 700,
+                css3: true,
+                navigation: true,
+            });
+        });
+
+    </script>
+    <!--[if lte IE 7]>
+    <!--<script type="text/javascript">-->
+    <!--window.location.href = 'https://www.alipay.com/x/kill-ie.htm';-->
+    <!--</script>-->
+    <![endif]-->
+    <!--<link rel="stylesheet" href="https://t.alipayobjects.com/images/rmsweb/T1GPFhXmldXXXXXXXX.css" type="css/text" />-->
+    <!--<link rel="alternate" media="only screen and(max-width: 640px)" href="https://ds.alipay.com/" />-->
+
+    <style>
+        body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select, img {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font: 12px/1.5 "Microsoft YaHei", tahoma, arial, Hiragino Sans GB, \5b8b\4f53;
+            overflow: hidden;
+            position: relative;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        /*header*/
+        /*.  {*/
+        /*position: fixed;*/
+        /*width: 100%;*/
+        /*top: 0;*/
+        /*left: 0;*/
+        /*z-index: 999;*/
+        /*}*/
+
+        header {
+            display: block;;
+            position: absolute;
+            top:0;
+            left: 0;
+            right: 0;
+            z-index: 51;
+            padding: 10px 0;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            height: 44px;
+            -webkit-transition: ease-out all 0.35s;
+            -moz-transition: ease-out all 0.35s;
+            -ms-transition: ease-out all 0.35s;
+            -o-transition: ease-out all 0.35s;
+            transition: ease-out all 0.35s;
+        }
+
+        .header-bg {
+            background-color: rgba(255, 255, 255, 0.98) !important;
+            box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1) !important;
+            height: 44px;
+        }
+        header .container {
+            width: 95%;
+        }
+        header .navbar-default {
+            background: #fff;
+            border: none;
+            margin: 0;
+        }
+        header .navbar-nav{margin-left: 40%;font-size: 14px;}
+        header .navbar-nav li {
+            /*margin-right: 3%;*/
+            text-align: center;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            font-size: 12px;
+            background-color: #2f2e2e;
+            color: #999;
+            padding: 10px 0;
+            line-height: 1.6;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="fullpage">
+    <div class="section">
+        <div class="bg se1_bg"></div>
+        <header class="header-bg">
+            <div class="container main-menu">
+                <nav class="navbar navbar-default">
+                    <div class="slm-logo"></div>
+                    <ul class="nav navbar-nav">
+                        <li class="mob-symbol">
+                            <a href="#" class="logo-symbol">
+                                <!--<img src="../static/images/logo.png" alt="Main Logo">-->
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="" href="#service">产品介绍</a>
+                        </li>
+                        <li>
+                            <a class="" href="#portfolio">合作商家</a>
+                        </li>
+                        <li>
+                            <a class="" href="#about">关于我们</a>
+                        </li>
+                        <li>
+                            <a class="" href="#contact">联系我们</a>
+                        </li>
+                    </ul>
+                    <!--/ .container-fluid -->
+                </nav>
+            </div>
+        </header>
+        <!--<div class="slm-logo"></div>-->
+        <p style="font-family: arial, helvetica, sans-serif; font-size: 50px;margin-top: 120px;">
+            做你想做的事，去你想去的地方
+        </p>
+        <div class="bot"><a href="#page2"><img src="http://static.myhaowai.com/pc-statics/images/index_images/bot.png">
+        </a></div>
+
+    </div>
+    <div class="section">
+        <div class="bg se2_bg"></div>
+        <h3>更多内容   敬请期待！</h3>
+        <!--<div class="bot"><a href="#page3"><img src="http://static.myhaowai.com/pc-statics/images/index_images/bot.png">-->
+        <!--</a></div>-->
+        <footer>
+            <div class="container">
+                <div class="col-sm-12 text-center">© 2018-2019 北京中航智慧科技有限公司 版权所有
+                    <!--<span>京ICP备16046633号</span>-->
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--<div class="section">-->
+        <!--<div class="bg se3_bg"></div>-->
+        <!--第三屏-->
+        <!--<div class="bot"><a href="#page4"><img src="http://static.myhaowai.com/pc-statics/images/index_images/bot.png">-->
+        <!--</a></div>-->
+    <!--</div>-->
+    <!--<div class="section">-->
+        <!--<div class="bg se4_bg"></div>-->
+        <!--<h3>第四屏</h3>-->
+        <!--<p>这是最后一屏</p>-->
+    <!--</div>-->
+</div>
+<!--<div class="header">-->
+<!--<div class="am-header-inner">-->
+<!--<div class="mainNav">-->
+<!--<div class="laymid">-->
+<!--<div class="alipay-logo"></div>-->
+<!--<div id="J_mainMenu" class="mainMenu">-->
+<!--<ul>-->
+<!--<li class="channel on">-->
+<!--<a class="channel-a" href="#">首页</a>-->
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+
+</body>
+</html>
+

@@ -1,0 +1,112 @@
+body {
+	width: 100%;
+	background-color: #F8F8F8;
+	overflow-x: hidden;
+	/*overflow: hidden;*/
+}
+
+html {
+	font-size: 62.5%
+}
+
+@media screen and (min-width:375px) {
+	html {
+		font-size: 73.24%
+	}
+}
+
+@media screen and (min-width:414px) {
+	html {
+		font-size: 80.86%
+	}
+}
+
+@media screen and (min-width:481px) {
+	html {
+		font-size: 94%
+	}
+}
+
+@media screen and (min-width:561px) {
+	html {
+		font-size: 109%
+	}
+}
+
+@media screen and (min-width:641px) {
+	html {
+		font-size: 125%
+	}
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.line {
+	border-top: 1px solid #F8F8F8;
+}
+
+.col000 {
+	color: #000;
+}
+
+.col333 {
+	color: #333;
+}
+
+.col666 {
+	color: #666;
+}
+
+.col999 {
+	color: #999;
+}
+
+.bom10 {
+	margin-bottom: 10px;
+}
+
+.center {
+	text-align: center;
+}
+
+.red {
+	color: #e74c3c;
+}
+
+.blue {
+	color: #00A0FF;
+}
+
+.showTip {
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: .4rem;
+	color: #fff;
+	display: none;
+	font-size: 1.1rem;
+	line-height: 2rem;
+	text-align: center;
+	min-width: 14rem;
+	max-width: 14rem;
+	padding: .2rem .2rem;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -7rem;
+	z-index: 1001;
+}
+
+.shadow {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+}
